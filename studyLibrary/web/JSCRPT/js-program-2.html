@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../../favicon/site.webmanifest">
+        <link rel="mask-icon" href="../../../favicon/safari-pinned-tab.svg" color="#2b5797">
+        <link rel="shortcut icon" href="../../../favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-config" content="../../../favicon/browserconfig.xml">
+        <meta name="theme-color" content="#2b5797">
+            
+        <title>js-program-2</title>
+        <meta charset="utf-8">
+            <h1> Programming (2) - Refactoring </h1>
+
+    </head>
+
+    <link rel="stylesheet" href="../../../style.css?after">
+
+    <body>
+        <div>
+            <input type="button" value="Go Back" onclick="javascript:location.href='../library-web.html'" style="color:#555555">
+            <p style="border:solid pink">
+                Refactoring means updating the source code without changing the behaviour of the application. Refactoring helps you keep your code solid, dry, and easy to maintain. <br>
+                Example of refactoring can be using variable (var), this (indicating self) and more.
+            </p>
+            
+            <p>
+                Recall from <a href="js-program-1.html" target="_blank" style="color:red">Programming (1) - Conditional Statement</a>, the button below will also give change in background theme from day mode to night mode.
+            </p>
+            
+            <input id="night_day" type="button" value="change to night" onclick="
+                if (document.querySelector('#night_day').value==='change to night'){
+                    document.querySelector('body').style.backgroundColor='#555555';
+                    document.querySelector('body').style.color = 'white';
+                    document.querySelector('#night_day').value = 'change to day';
+                }
+                else {
+                    document.querySelector('body').style.backgroundColor='white';
+                    document.querySelector('body').style.color = '#555555';
+                    document.querySelector('#night_day').value = 'change to night';
+                }
+            ">
+            
+            <p>
+                Here, there is another <strong>change theme</strong> button which has exactly same code as above. But this button has problem. If you clock the button, it is changing the background color correctly, but it seems like the <u>first button at the above is triggered</u>!
+            </p>
+            
+            <input id="night_day" type="button" value="change to night" onclick="
+                if (document.querySelector('#night_day').value==='change to night'){
+                    document.querySelector('body').style.backgroundColor='#555555';
+                    document.querySelector('body').style.color = 'white';
+                    document.querySelector('#night_day').value = 'change to day';
+                }
+                else {
+                    document.querySelector('body').style.backgroundColor='white';
+                    document.querySelector('body').style.color = '#555555';
+                    document.querySelector('#night_day').value = 'change to night';
+                }
+            ">
+            
+            <p>
+                This is, finally, the independent <strong>change theme</strong> button. The only difference from the second button is the use of <strong style="color:pink">this</strong> in the if-else statement. According to W3School, <strong style="border:solid pink">In a function definition, this refers to the "owner" of the function.</strong><br> For more details of this, refer to this <a href="https://www.w3schools.com/js/js_this.asp" target="_blank">link</a>. Also, the button code below made use of variable (var) which significantly helps in reducing code density in case the code is really really long. 
+            </p>
+    
+            
+            <input id="night_day" type="button" value="change to night" onclick="
+                var flag = document.querySelector('body')
+                if (this.value==='change to night'){
+                    flag.style.backgroundColor='#555555';
+                    flag.style.color = 'white';
+                    this.value = 'change to day';
+                }
+                else {
+                    flag.style.backgroundColor='white';
+                    flag.style.color = '#555555';
+                    this.value = 'change to night';
+                }
+            ">
+            
+                
+
+        </div>
+    </body>
+</html>

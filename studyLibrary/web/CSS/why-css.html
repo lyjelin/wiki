@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../../../favicon/safari-pinned-tab.svg" color="#2b5797">
+    <link rel="shortcut icon" href="../../../favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="../../../favicon/browserconfig.xml">
+    <meta name="theme-color" content="#2b5797">
+        
+	<title>why-css</title>
+	<meta charset="utf-8">
+        <h1> CSS </h1>
+</head>
+
+<link rel="stylesheet" href="../../../style.css?after" type="text/css" charset="utf-8"/>
+
+<body><div>
+    <input type="button" value="Go back" onclick="javascript:location.href='../library-web.html'"; style="color:#555555">
+
+    <p>CSS and HTML is very different from each other. If HTML describe information, then CSS makes it look better.
+    </p>
+
+    <p>Below shows the relationship of ul(unordered list) and li </p>
+    <ul>
+        <li> Cookie </li>
+        <li> Ciabatta </li>
+        <li> Brownie </li>
+    </ul>
+    <ul>
+        <li> Hoodie </li>
+        <li> Rider Jacket </li>
+        <li> Jeans </li>
+    </ul><br>
+
+    And this shows the relationship between ol(ordered list) and li:<br>
+    <ol>
+        <li> Cookie </li>
+        <li> Ciabatta </li>
+        <li> Brownie </li>
+    </ol>
+    
+    <p> I have created an external css file written as 'style.css' and add a &lt link &gt to html files.
+    </p>
+    
+    <p> But the problem was: once I link a css in to html file, the browser (I was using Safari and Chrome) didn't immediately apply the change. For example, when I add and modified the <strong> margin </strong> attribute in style.css, the web didn't looks like it received the modification. So I googled to find solution.
+    </p>
+    
+    <p> It was CSS file linkage error. As the browser saved the previous CSS cache, it was not updating to latest style.css version. And there were 2 solutions: first, removing all cookie&cache history in internet (deleting browser's cache) or second, add ?after to href link.
+    </p>
+    
+    <p>
+    For example, if this is our code for linking external css file: &lt link rel="stylesheet" href="../style.css" &g update the href link part to href="../style.css<strong style="color:red">?after</strong>" so the browser can be alert on every css file update.
+    </p>
+    
+    <br>
+    
+    <p> I Referred to: <a href="https://meaownworld.tistory.com/89">https://meaownworld.tistory.com/89</a>
+    </p>
+</div></body>
+</html>

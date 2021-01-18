@@ -1,0 +1,41 @@
+/* Contain shared information of html style tags */ 
+@charset "utf-8";
+
+body{
+    margin:0;
+    color: #555555;
+    
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    text-align:center;
+    margin:0;
+    padding:10px;
+}
+
+h2, h3, h4, h5, h6, h7 {
+    text-align:center;
+    margin:0;
+    padding:5px;
+}
+
+
+
+a {
+    color:#3B79A0;
+}
+
+div {
+    margin:20px;
+}
+
+.center {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%
+}
+
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
