@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../../favicon/site.webmanifest">
+        <link rel="mask-icon" href="../../../favicon/safari-pinned-tab.svg" color="#2b5797">
+        <link rel="shortcut icon" href="../../../favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-config" content="../../../favicon/browserconfig.xml">
+        <meta name="theme-color" content="#2b5797">
+            
+        <title>js-program-1</title>
+        <meta charset="utf-8">
+            <h1> Programming (1) - Conditional statement </h1>
+
+    </head>
+
+    <link rel="stylesheet" href="../../../style.css?after">
+
+    <body>
+        <div>
+            <input type="button" value="Go Back" onclick="javascript:location.href='../library-web.html'" style="color:#555555">
+            
+            <p>
+                Recall from <a href="js-web-control.html" target="_blank">Web control</a>, the button below will also give change in background theme from day mode to night mode.
+            </p>
+            
+            <input id="night_day" type="button" value="change to night" onclick="
+                if (document.querySelector('#night_day').value==='change to night'){
+                    document.querySelector('body').style.backgroundColor='#555555';
+                    document.querySelector('body').style.color = 'white';
+                    document.querySelector('#night_day').value = 'change to day';
+                }
+                else {
+                    document.querySelector('body').style.backgroundColor='white';
+                    document.querySelector('body').style.color = '#555555';
+                    document.querySelector('#night_day').value = 'change to night';
+                }
+            ">
+            
+            <p>
+                Background of website will change to dark mode if you click <strong>change to night</strong> button and vice versa. The mechanism behind this <strong>change theme</strong> button is the conditional if-else statement.
+            </p>
+            
+            <p>
+                The code I used for <strong>change theme</strong> button is like below:
+            </p>
+            
+            <p style="margin:8px">
+            &lt input id="night_day" type="button" <strong style="color:blue">value</strong>="change to night" onclick="<br>
+                if (document.querySelector('#night_day').<strong style="color:blue">value</strong>==='change to night'){<br>
+                &nbsp    document.querySelector('body').style.backgroundColor='#555555';<br>
+                &nbsp    document.querySelector('body').style.color = 'white';<br>
+                &nbsp    document.querySelector('#night_day').<strong style="color:blue">value</strong> = 'change to day';<br>
+                }<br>
+                else {<br>
+                &nbsp    document.querySelector('body').style.backgroundColor='white';<br>
+                &nbsp    document.querySelector('body').style.color = '#555555';<br>
+                &nbsp   document.querySelector('#night_day').<strong style="color:blue">value</strong> = 'change to night';<br>
+                }<br>
+            " &gt
+            </p>
+                
+                
+
+        </div>
+    </body>
+</html>

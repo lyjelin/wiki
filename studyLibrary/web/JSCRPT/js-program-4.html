@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../../favicon/site.webmanifest">
+        <link rel="mask-icon" href="../../../favicon/safari-pinned-tab.svg" color="#2b5797">
+        <link rel="shortcut icon" href="../../../favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-config" content="../../../favicon/browserconfig.xml">
+        <meta name="theme-color" content="#2b5797">
+            
+        <title>js-program-4</title>
+        <meta charset="utf-8">
+            <h1> Programming (4) - Function </h1>
+
+    </head>
+    
+    <script>
+        function night_day_handler(self){
+            var flag = document.querySelector('body');
+            if (self.value==='change to night'){
+                flag.style.backgroundColor='#555555';
+                flag.style.color = 'white';
+                self.value = 'change to day';
+                
+                var flaglist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < flaglist.length){
+                    flaglist[i].style.color = 'orange';
+                    i+=1;
+                }
+            }
+            else {
+                flag.style.backgroundColor='white';
+                flag.style.color = '#555555';
+                self.value = 'change to night';
+                
+                var flaglist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < flaglist.length){
+                    flaglist[i].style.color = 'darkgreen';
+                    i+=1;
+                }
+            }
+        }
+ 
+    </script>
+
+    <link rel="stylesheet" href="../../../style.css?after">
+
+    <body>
+        <div>
+            <input type="button" value="Go Back" onclick="javascript:location.href='../library-web.html'" style="color:#555555">
+                
+            <br> <br>
+            
+            <input id="night_day" type="button" value="change to night" onclick="
+                night_day_handler(this);">
+            
+            <input id="night_day" type="button" value="change to day" onclick="
+                night_day_handler(this);">
+            
+            <br>
+            
+            <h4 style="text-align:left">Function basics</h4>
+            
+            <script>
+                function two(){
+                    document.write('<li>2-1</li>');
+                    document.write('<li>2-2</li>');
+                }
+                document.write('<li>1</li>');
+                two();
+                document.write('<li>3</li>');
+                two();
+            </script>
+    
+            <h4 style="text-align:left">Parameters & Argument</h4>
+
+                <script>
+                    function onePlusOne(){
+                        document.write(1+1+'<br>');
+                    }
+                    onePlusOne();
+                    function sum(left, right){
+                        document.write(left+right+'<br>');
+                    }
+                
+                sum(2, 3);
+                sum(8, 9);
+                </script>
+                
+            <h4 style="text-align:left">Return</h4>
+                <script>
+                    function _sum(left, right){
+                        return left+right;
+                    }
+                    document.write(_sum(5, 6)+'<br>');
+                    document.write('<div style="color:magenta">'+_sum(5, 6)+'</div>');
+                    document.write('<div style="font-size:3rem;">'+_sum(5, 6)+'</div>');
+                </script>
+                
+        </div>
+    </body>
+</html>
