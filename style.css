@@ -1,6 +1,7 @@
 /* Contain shared information of html style tags */ 
 @charset "utf-8";
 
+/*
 @font-face {
     font-family:IropkeBatangM;
     src:url(/wiki/IropkeBatangM.eot);
@@ -10,40 +11,37 @@
         
     font-style: normal;
 }
+*/
+
+/* 이롭게 바탕체 import 하기*/
+@import url('//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
 
 body{
-    font-family:IropkeBatangM;
+    font-family: 'Iropke Batang', serif;
     margin:0;
     color: #555555;
     
 }
 
 h1 {
-    font-family:IropkeBatanfM;
+    font-family: 'Iropke Batang', serif;
     text-align:center;
     margin:0;
     padding:10px;
 }
 
 h2, h3, h4, h5, h6, h7 {
-    font-family:IropkeBatangM;
+    font-family: 'Iropke Batang', serif;
     text-align:center;
     margin:0;
     padding:5px;
 }
 
-p {
-    font-family:IropkeBatangM;
-}
-
-
 a {
-    font-family:IropkeBatangM;
     color:#3B79A0;
 }
 
 div {
-    font-family:IropkeBatangM;
     margin:20px;
 }
 
