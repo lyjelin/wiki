@@ -3,11 +3,12 @@
 
 @font-face {
     font-family:IropkeBatangM;
-    src:url('IropkeBatangM.woff');
-    src:local(※),
-        url(IropkeBatangM.woff) format('woff'),
-        url(IropkeBatangM.eot?#iefix) format('embedded-opentype');
-        font-style: normal;
+    src:url(/wiki/IropkeBatangM.eot);
+    src:url(/wiki/IropkeBatangM.eot?#iefix) format('embedded-opentype'),
+        url(/wiki/IropkeBatangM.woff) format('woff');
+    src:local(※), url(/wiki/IropkeBatangM.woff) format('woff');
+        
+    font-style: normal;
 }
 
 body{
