@@ -11,13 +11,14 @@
 }
 
 body{
-    font-family:IropkeBatanfM;
+    font-family:IropkeBatangM;
     margin:0;
     color: #555555;
     
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
+    font-family:IropkeBatanfM;
     text-align:center;
     margin:0;
     padding:10px;
