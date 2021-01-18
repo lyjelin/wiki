@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../favicon/site.webmanifest">
+        <link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg" color="#2b5797">
+        <link rel="shortcut icon" href="../../favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-config" content="../../favicon/browserconfig.xml">
+        <meta name="theme-color" content="#2b5797">
+            
+        <title>Git Basic</title>
+        <meta charset="utf-8">
+        <h1>Git Basic</h1>
+        <div><hr class="solid"></div>
+    </head>
+        
+    <link rel="stylesheet" href="../../style.css?after" type="text/css" charset="utf-8"/>
+
+    <body>
+        <div>
+        
+            <input type="button" value="Return to Main" onclick="javascript:location.href='../../index.html'"; style="color:#555555">
+            <br>
+            
+            <h4>Basic Command Flow</h4>
+            
+            <div style="line-height:1.5em;margin:10px">
+                1. git init : initialize git storage<br>
+                2. git status : check current git storage status<br>
+                3. git branch : make new branch of my own<br>
+                4. git commit : most important command, i.e. git commit -m "Message here"<br>
+                5. git push : any modification made in my local computer can be seen in online too<br>
+                6. git pull : re-install the git storage into latest version
+                7. git merge : my branch will merge into master branch where all co-workers can view<br>
+            </div>
+            
+            <br>
+            
+            <div style="line-height:1.5em;margin:10px">
+                1. git add .<br>
+                2. git commit -m "Message"<br>
+                3. git push <br>
+            </div>
+            
+            <br>
+            
+            <div style="line-height:1.5em;margin:10px">
+                To start with my local computer: <br>
+                1. type command: <strong>git config --global user.name "my name here"</strong><br>
+                2. type email: <strong>git config --global user.email "my email here"</strong><br>
+                3. Get space for my respiratory in my local directory, i.e. <strong>mkdir ~/MyProject</strong><br>
+                4. <strong>cd ~/MyProject</strong> and use git command: <strong>git init</strong><br>
+                5. <strong>touch ReadMe.txt</strong> will create a ReadMe.txt in MyProject folder<br>
+                6. <strong>git add ReadMe.txt</strong> <br>
+                7. <strong>git commit -m "Add ReadMe.txt"</strong><br>
+                8. Before to 'push' the local work into online storage, we need to connect them first<br>
+                9. <strong>git remote add origin https://github.com/username/myproject.git</strong> (-> I can find URL from respiratory) <br>
+                10. And now I can upload changes made by <strong>git push</strong><br>
+                
+            </div>
+            
+            <br>
+            
+            <hr style="border:dotted 1px">
+            
+            <p>
+            Reference website links:
+            <ul>
+                <li><a href="https://nolboo.kim/blog/2013/10/06/github-for-beginner/" target="_blank">완전 초보를 위한 깃허브 - NOLBOO'S BLOG</a></li>
+            </ul>
+            <p>
+        </div>
+    </body>
+</html>
