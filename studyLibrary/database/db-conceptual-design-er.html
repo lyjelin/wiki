@@ -25,6 +25,8 @@
             
             <h3>ER Diagram</h3>
             
+            <div><hr class="solid;highlight-gray"></div>
+            
             <h4>1. Entity and Entity set</h4>
             <div>
                 <ul>
@@ -33,13 +35,14 @@
                     </li><strong>Entity set</strong> - A set of entities of the same type that share the same properties (or attributes); <code><mark class="highlight-blue">set of $\forall$ customers</mark></code> <code><mark class="highlight-blue">all saving accounts</mark></code> <code><mark class="highlight-blue">all departments in the company</mark></code></li>
                 </ul>
                 
-                <div><hr class="solid;highlight-gray"></div>
                 <h4>In ER diagram</h4>
                 <ul>
                     <li><code><mark class="highlight-brown">Rectangle</mark></code> - entity sets</li>
                     <li><code><mark class="highlight-brown">Ellipses</mark></code> - attributes </li>
                     <li><code><mark class="highlight-brown">Line</mark></code> between a rectangle and ellipse - link between an attribute and an entity set </li>
             </div>
+            
+            <div><hr class="solid;highlight-gray"></div>
             
             <h4>2. Relationship and Relationship set</h4>
             <div>
@@ -57,6 +60,8 @@
                 </ul>
             </div>
             
+            <div><hr class="solid;highlight-gray"></div>
+            
             <h4>3. Constraints</h4>
             <div>
                 <ul>
@@ -71,20 +76,22 @@
                         <li>i.e. whether a customer must have an account record, or there can be some customers without any accounts?</li>
                     </ul>
                 </ul>
-                <div><hr class="solid;highlight-gray"></div>
+                
                 <h4>In ER diagram</h4>
                 <ul>
                     <li><code><mark class="highlight-brown">Directed line (→)</mark></code>, signifying <strong>one</strong> or An <code><mark class="highlight-brown">undirected line (-)</mark></code>, signifying <strong>many</strong>, between the relationship set and entity set</li>
-                    <img scr="img/db-er-1.jpeg" title="Mapping cardinality" width="60%">
+                    <img scr="img/db-er-1.jpeg" title="Mapping cardinality">
                     <li><code><mark class="highlight-brown">Double line (=)</mark></code> indicates <strong>Total participation</strong> : Every Entity in the entity set participates at least one relationship In the relationship set</li>
                     <li>Single line(-)</mark></code> indicates <strong>Partial participation</strong> : Some entity may not participate in any relationship in the relationship set</li>
-                    <img scr="img/db-er-2.jpeg" title="Participation constraints" width="60%">
+                    <img scr="img/db-er-2.jpeg" title="Participation constraints">
                 </ul>
             </div>
             
+            <div><hr class="solid;highlight-gray"></div>
+            
             <h4>4. Keys</h4>
             
-            <div><hr class="solid"></div>
+            <div><hr class="dotted;highlight-gray"></div>
             
             <h3>More on ER Diagram</h3>
             
