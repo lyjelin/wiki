@@ -313,6 +313,35 @@
             
             <h3>3. Role</h3>
             
+            <div><p>Double diamond is depicting an identifying relationship set</p></div>
+            
+            <div>
+                <p>
+                Example: Please build a system to store the <strong>manager</strong> and <strong>worker</strong> information for UBank. For each manager, we record his/her manager ID, name and address; for each worker, we record its worker ID, name and address. Each manager can have <u>no, one or more</u> workers, and each worker has to report to <u>only one</u> manager.
+                </p>
+                
+                <p><img src="img/db-er-9.jpeg" alt="Role" style="width:340px"></p>
+                
+                <ul>
+                    <li>Entity sets of a relationship need not be distinct. So above ER diagram can be modified as below: </li>
+                    <ul>
+                        <li>The label <code><mark class="highlight-brown">manager</mark></code> and <code><mark class="highlight-brown">worker</mark></code> are called <strong>roles</strong></li>
+                        <li>They specify how employee entities interact via the <code><mark class="highlight-brown">works-for</mark></code> relationship set.</li>
+                    </ul>
+                    <li>Cardinality</li>
+                    <ul>
+                        <li>An employee <code><mark class="highlight-brown">worker</mark></code> works for <strong>one</strong> manager</li>
+                        <li>An employee <code><mark class="highlight-brown">manager</mark></code> can have <strong>more than one</strong> worker</li>
+                    </ul>
+                    <li>Participation</li>
+                    <ul>
+                        <li>An employee <code><mark class="highlight-brown">worker</mark></code> may not work for any manager</li>
+                        <li>An employee <code><mark class="highlight-brown">manager</mark></code> can have no workers work for him/her.</li>
+                    </ul>
+                    <p><img src="img/db-er-10.jpeg" alt="No distinct entity sets of relationship" style="width:340px"></p>
+                </ul>
+            </div>
+            
             <div><hr class="dashed;highlight-gray"></div>
             
             <h3>4. Specialization</h3>
