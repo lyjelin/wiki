@@ -153,6 +153,47 @@
                             <img style="width:240px" src="img/db-er-3.jpeg"/>
                     </div>
                 </div>
+                
+                <h4>Candidate key</h4>
+                
+                <p>Candidate key of Ann entity set is a <mark class="highlight-orange">minimal super key</mark>
+                </p>
+                <div class="column-list">
+                    <div style="width:50%" class="column">
+                        <p class=""><strong>Minimal</strong> - no redundant attributes, i.e., no subset of a candidate key is still a key
+                        <div class="indented">
+                            <p class="">Although followings are <strong>super keys</strong>:
+                            </p>
+                            <p class="">
+                            {<mark class="highlight-brown"><code>customer_id</code></mark>,<mark class="highlight-brown"><mark class="highlight-brown"> </mark></mark><mark class="highlight-brown"><code><mark class="highlight-brown"><mark class="highlight-brown">name</mark></mark></code></mark>}, {<mark class="highlight-brown"><code>customer_id</code></mark>, <mark class="highlight-brown"><code>address</code></mark>}, {<mark class="highlight-brown"><code>customer_id</code></mark>, <mark class="highlight-brown"><code>name</code></mark>, <mark class="highlight-brown"><code>address</code></mark>}
+                            </p>
+                        </div>
+                        </p>
+                        <p>
+                        Only the <mark class="highlight-brown"><code>customer_id</code></mark> is a <strong>candidate key </strong>because it&#x27;s minimal
+                        </p>
+                    </div>
+                    <div style="width:50%" class="column">
+                        <img style="width:240px" src="img/db-er-3"/>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                    Every relation will have <strong>at least one </strong>candidate key.
+                    </p>
+                </div>
+                
+                <h4> Primary Key</h4>
+                
+                <p>
+                Primary key is a <mark class="highlight-orange">selected candidate key</mark>, when there are several candidate keys present
+                <div class="indented">
+                    <h3 id="8a2a105a-a59a-437b-9561-1b0b2abbf2c9" class="">In ER diagram</h3>
+                    <ul>
+                        <li><mark class="highlight-brown"><code>Underline</code></mark> the attribute (<mark class="highlight-brown"><code>Ellipses</code></mark>) <img style="width:432px" src="img/db-er-4jpeg"/></li>
+                    </ul>
+                </div>
+                </p>
             </div>
             
             <div><hr class="dotted;highlight-gray"></div>
