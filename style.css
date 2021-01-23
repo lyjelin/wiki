@@ -41,6 +41,50 @@ a {
     color:#3B79A0;
 }
 
+mark {
+    background-color: transparent;
+}
+
+.code,
+code {
+    background: rgba(135, 131, 120, 0.15);
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 85%;
+    tab-size: 2;
+}
+
+code {
+    color: #eb5757;
+}
+
+.code {
+    padding: 1.5em 1em;
+}
+
+.code-wrap {
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.code > code {
+    background: none;
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+}
+
+.highlight-brown {
+    color: rgb(100,71,58);
+}
+.highlight-teal {
+    color: rgb(15,123,108);
+}
+.highlight-blue {
+    color: rgb(11,110,153);
+}
+
 div {
     margin:20px;
 }
