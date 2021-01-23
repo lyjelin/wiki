@@ -98,7 +98,7 @@
             <div><hr class="solid;highlight-gray"></div>
             
             <h3>Practical Issues : As a professional DB designer, we have to be able to</h3>
-            <ol style="line-height:1.5em;margin:10px">
+            <ol style="line-height:1.2em;margin:10px">
                 <li>Understand and model the data of an application using a ER diagram</li>
                 <li>Interact with the client to work out a clear problem definition</li>
                 <li>Realize the missing information and ask your client for clarification</li>
@@ -116,7 +116,7 @@
                 &nbsp   <code><mark class="highlight-brown">line</mark></code> - link between an attribute and an entity set
                 Mapping cardinalities - <code><mark class="highlight-brown">many</mark></code> <code><mark class="highlight-brown">one</mark></code>
                 &nbsp   concerns the number of entities to which another entity can be associated via a relationship set<br>
-                Participation constraints <code><mark class="highlight-brown">full</mark></code> code><mark class="highlight-brown">partial</mark></code><br>
+                Participation constraints <code><mark class="highlight-brown">full</mark></code> <code><mark class="highlight-brown">partial</mark></code><br>
                 &nbsp   concerns whether $$\forall$$ entities in the entity set have to participate in the relationship set<br>
                 </p>
             </div>
@@ -126,15 +126,33 @@
             <h3>4. Keys</h3>
             <div>
                 <h4>Super key</h4>
-                <div>
-                    <p>
-                    Super key of an entity set is a set of one or more attributes whose values uniquely determine each entity
-                    </p>
-                    <p>
-                    &nbsp No two entities have exactly the same values in super key
-                    </p>
-                </div>
                 
+                <p>Super key of an entity set is a set of <mark class="highlight-orange">one or more attributes</mark> whose values uniquely determine each entity
+                    <div class="indented">
+                        <p>No two entities have exactly the same values in super key
+                        </p>
+                    </div>
+                </p>
+                <div class="column-list">
+                    <div style="width:50%" class="column">
+                        <p>In this example, each A (customer) has his/her <mark class="highlight-brown"><code>unique customer_id</code></mark>, then
+                        <div class="indented">
+                            <p>
+                            {<mark class="highlight-brown"><code>customer_id</code></mark>, <mark class="highlight-brown"><code>name</code></mark>} is a super key
+                            </p>
+                            <p>
+                            {<mark class="highlight-brown"><code>customer_id</code></mark>, <mark class="highlight-brown"><code>address</code></mark>} is another super key
+                            </p>
+                            <p>
+                            {<mark class="highlight-brown"><code>customer_id</code></mark>, <mark class="highlight-brown"><code>name</code></mark>, <mark class="highlight-brown"><code>address</code></mark>} is also a super key
+                            </p>
+                        </div>
+                        </p>
+                    </div>
+                    <div style="width:50%" class="column">
+                            <img style="width:240px" src="img/db-er-3.jpeg"/>
+                    </div>
+                </div>
             </div>
             
             <div><hr class="dotted;highlight-gray"></div>

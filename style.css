@@ -36,6 +36,27 @@ h2, h3, h4, h5, h6, h7 {
     padding:5px;
 }
 
+.indented {
+    padding-left: 1.5em;
+}
+
+.column-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    padding: 0 1em;
+}
+
+.column:first-child {
+    padding-left: 0;
+}
+
+.column:last-child {
+    padding-right: 0;
+}
+
 a {
     color:#3B79A0;
 }
