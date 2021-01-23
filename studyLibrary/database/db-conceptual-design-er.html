@@ -34,7 +34,7 @@
                 </ul>
                 
                 <div><hr class="solid;highlight-gray"></div>
-                <h5>In ER diagram</h5>
+                <h4>In ER diagram</h4>
                 <ul>
                     <li><code><mark class="highlight-brown">Rectangle</mark></code> - entity sets</li>
                     <li><code><mark class="highlight-brown">Ellipses</mark></code> - attributes </li>
@@ -51,7 +51,7 @@
                     <li>A <code><mark class="highlight-teal">Relationship set</mark></code> is a set of relationships of the same type</li>
                 </ul>
                 <div><hr class="solid;highlight-gray"></div>
-                <h5>In ER diagram</h5>
+                <h4>In ER diagram</h4>
                 <ul>
                     <li><code><mark class="highlight-brown">Diamond</mark></code> - a set of relationship</li>
                 </ul>
@@ -65,11 +65,20 @@
                         <li>Concerns the <mark class="highlight-blue">number of entities</mark> to which another entity can be associated via a relationship set</il>
                         <li>i.e. For each customer, how many accounts he/she can have? <mark class="highlight-orange">One or more than one</mark>?</li>
                     </ul>
+                    <li><strong>Participation constraints</strong></li>
+                    <ul>
+                        <li>Concerns whether all entities in the entity set have to participate in the relationship set</li>
+                        <li>i.e. whether a customer must have an account record, or there can be some customers without any accounts?</li>
+                    </ul>
                 </ul>
                 <div><hr class="solid;highlight-gray"></div>
-                <h5>In ER diagram</h5>
+                <h4>In ER diagram</h4>
                 <ul>
-                    <li><code><mark class="highlight-brown">Diamond</mark></code> - a set of relationship</li>
+                    <li><code><mark class="highlight-brown">Directed line (→)</mark></code>, signifying <strong>one</strong> or An <code><mark class="highlight-brown">undirected line (-)</mark></code>, signifying <strong>many</strong>, between the relationship set and entity set</li>
+                    <img scr="img/db-er-1.jpeg" title="Mapping cardinality" width="60%">
+                    <li><code><mark class="highlight-brown">Double line (=)</mark></code> indicates <strong>Total participation</strong> : Every Entity in the entity set participates at least one relationship In the relationship set</li>
+                    <li>Single line(-)</mark></code> indicates <strong>Partial participation</strong> : Some entity may not participate in any relationship in the relationship set</li>
+                    <img scr="img/db-er-2.jpeg" title="Participation constraints" width="60%">
                 </ul>
             </div>
             
