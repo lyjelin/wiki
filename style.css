@@ -128,3 +128,8 @@ div {
 hr.dotted {
   border-top: 3px dotted #bbb;
 }
+
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
