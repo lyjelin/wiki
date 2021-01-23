@@ -23,11 +23,11 @@
         <div>
             <input type="button" value="Return back to list" onclick="javascript:location.href='library-database.html'";style="color:#555555">
             
-            <h3>ER Diagram</h3>
+            <h2>ER Diagram</h2>
             
             <div><hr class="solid;highlight-gray"></div>
             
-            <h4>1. Entity and Entity set</h4>
+            <h3>1. Entity and Entity set</h3>
             <div>
                 <ul>
                     <li><strong>Entity</strong> - an object that exists and is distinguishable from other object; <code><mark class="highlight-blue">customer</mark></code>, <code><mark class="highlight-blue">account</mark></code>, <code><mark class="highlight-blue">department</mark></code></li>
@@ -35,7 +35,7 @@
                     </li><strong>Entity set</strong> - A set of entities of the same type that share the same properties (or attributes); <code><mark class="highlight-blue">set of $\forall$ customers</mark></code> <code><mark class="highlight-blue">all saving accounts</mark></code> <code><mark class="highlight-blue">all departments in the company</mark></code></li>
                 </ul>
                 
-                <h4>In ER diagram</h4>
+                <h3>In ER diagram</h3>
                 <ul>
                     <li><code><mark class="highlight-brown">Rectangle</mark></code> - entity sets</li>
                     <li><code><mark class="highlight-brown">Ellipses</mark></code> - attributes </li>
@@ -44,7 +44,7 @@
             
             <div><hr class="solid;highlight-gray"></div>
             
-            <h4>2. Relationship and Relationship set</h4>
+            <h3>2. Relationship and Relationship set</h3>
             <div>
                 <ul>
                     <li>A <code><mark class="highlight-teal">Relationship</mark></code> is an association among entities</li>
@@ -53,8 +53,10 @@
                         </ul>
                     <li>A <code><mark class="highlight-teal">Relationship set</mark></code> is a set of relationships of the same type</li>
                 </ul>
-                <div><hr class="solid;highlight-gray"></div>
-                <h4>In ER diagram</h4>
+            </div>
+                
+            <h3>In ER diagram</h3>
+            <div>
                 <ul>
                     <li><code><mark class="highlight-brown">Diamond</mark></code> - a set of relationship</li>
                 </ul>
@@ -62,10 +64,10 @@
             
             <div><hr class="solid;highlight-gray"></div>
             
-            <h4>3. Constraints</h4>
+            <h3>3. Constraints</h3>
             <div>
                 <ul>
-                    <li><strong>Mapping cardinalities<strong></li>
+                    <li><strong>Mapping cardinalities</strong></li>
                     <ul>
                         <li>Concerns the <mark class="highlight-blue">number of entities</mark> to which another entity can be associated via a relationship set</il>
                         <li>i.e. For each customer, how many accounts he/she can have? <mark class="highlight-orange">One or more than one</mark>?</li>
@@ -78,26 +80,43 @@
                 </ul>
             </div>
                 
-            <h4>In ER diagram</h4>
+            <h3>In ER diagram</h3>
             <div>
                 <ul>
                     <li><code><mark class="highlight-brown">Directed line (→)</mark></code>, signifying <strong>one</strong> or An <code><mark class="highlight-brown">undirected line (-)</mark></code>, signifying <strong>many</strong>, between the relationship set and entity set</li>
-                    <img scr="img/db-er-1.jpeg" title="Mapping cardinality">
+                    
+                    <img scr="img/db-er-1.jpeg" alt="Mapping cardinality">
+                        
                     <li><code><mark class="highlight-brown">Double line (=)</mark></code> indicates <strong>Total participation</strong> : Every Entity in the entity set participates at least one relationship In the relationship set</li>
                     <li>Single line(-)</mark></code> indicates <strong>Partial participation</strong> : Some entity may not participate in any relationship in the relationship set</li>
-                    <img scr="img/db-er-2.jpeg" title="Participation constraints">
+                    
+                    <img scr="img/db-er-2.jpeg" alt="Participation constraints">
+                        
                 </ul>
             </div>
             
             <div><hr class="solid;highlight-gray"></div>
             
-            <h5>Practical Issues : As a professional DB designer, we have to be able to</h5>
+            <h3>Practical Issues : As a professional DB designer, we have to be able to</h3>
             <ol style="line-height:1.5em;margin:10px">
                 <li>Understand and model the data of an application using a ER diagram</li>
                 <li>Interact with the client to work out a clear problem definition</li>
                 <li>Realize the missing information and ask your client for clarification</li>
                 <li>Provide professional suggestions to better design the database for the specific application</li>
             </ol>
+            
+            <h5>To Recap</h5>
+
+            Entity and entity set, Entities have Attributes
+            Relationship and relationship set
+            In the ER diagram:
+               rectangle - entity sets
+               ellipses - attributes
+               line - link between an attribute and an entity set
+            Mapping cardinalities - many one
+               concerns the number of entities to which another entity can be associated via a relationship set
+            Participation constraints full partial
+               concerns whether \forall entities in the entity set have to participate in the relationship set
             
             <h4>4. Keys</h4>
             

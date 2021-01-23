@@ -20,6 +20,8 @@ body{
     font-family: 'Iropke Batang', serif;
     margin:0;
     color: #555555;
+    line-height: 1.5;
+    white-space: pre-wrap;
     
 }
 
@@ -51,7 +53,7 @@ code {
     border-radius: 3px;
     padding: 0.2em 0.4em;
     border-radius: 3px;
-    font-size: 85%;
+    font-size: 90%;
     tab-size: 2;
 }
 
