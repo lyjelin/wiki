@@ -345,7 +345,87 @@
             <div><hr class="dashed;highlight-gray"></div>
             
             <h3>4. Specialization</h3>
+            <div class="column-list">
+                <div style="width:50%" class="column">
+                    <p>
+                    <ul>
+                        <li>We designate sub-groupings within an entity set that are distinctive from other entities in the set</li>
+                        <li>A <strong>lower-level entity set</strong> inherits all attributes and relationship set participation of the <strong>higher-level entity set</strong> to which is it linked</li>
+                        <li>Lower level entity set can have its own attributes</li>
+                    </p>
+                </div>
+                <div style="width:50%" class="column">
+                        <img style="width:240px" alt="ISA" src="img/db-er-11.jpeg"/>
+                </div>
+            </div>
+            
+            <div><hr class="dotted"></div>
 
+            <h4>Total or Partial</h4>
+            <div>
+                Specifies whether an entity in the higher level-entity set must belong to at least one of the lower-level entity sets within a specialization.
+            </div>
+            <div class="column-list">
+                <div style="width:50%" class="column">
+                    <p><strong>Total specialization</strong></p>
+                    <p>
+                    An <code><mark class="highlight-brown">MSc student</mark></code> MUST BE either a <code><mark class="highlight-brown">full-time student</mark></code> or a <code><mark class="highlight-brown">part-time student</mark></code>, so all MSc students must participate in this specialization.
+                    </p>
+                </div>
+                <div style="width:50%" class="column">
+                        <img style="width:240px" alt="ISA" src="img/db-er-12.jpeg"/>
+                </div>
+            </div>
+            
+            <div class="column-list">
+                <div style="width:50%" class="column">
+                    <p><strong>Partial specialization</strong></p>
+                    <p>
+                    A <code><mark class="highlight-brown">book</mark></code> may not be specialized to <code><mark class="highlight-brown">story book</mark></code> or <code><mark class="highlight-brown">comics</mark></code>, so not all books are participating in this specialization.
+                    </p>
+                </div>
+                <div style="width:50%" class="column">
+                        <img style="width:240px" alt="ISA" src="img/db-er-13.jpeg"/>
+                </div>
+            </div>
+            
+            <div><hr class="dotted"></div>
+            
+            <h4>Disjoint or Oveerlappint</h4>
+            <div>
+                Constraints on whether entities may belong to more than one lower-level entity set within a single specialization.
+            </div>
+            <div class="column-list">
+                <div style="width:50%" class="column">
+                    <p><strong>Disjoint Specialization</strong></p>
+                    <p>
+                    An <code><mark class="highlight-brown">MSc student</mark></code> must be **either** a <code><mark class="highlight-brown">full-time student</mark></code> or a <code><mark class="highlight-brown">part-time student</mark></code>, so the specialization is disjoint.
+                    </p>
+                    <p>
+                    We use a keyword <strong>Disjoint</strong> to indicate it.
+                    </p>
+                </div>
+                <div style="width:50%" class="column">
+                        <img style="width:240px" alt="ISA" src="img/db-er-14.jpeg"/>
+                </div>
+            </div>
+            
+            <div class="column-list">
+                <div style="width:50%" class="column">
+                    <p><strong>Overlapping specialization</strong></p>
+                    <p>
+                    A <code><mark class="highlight-brown">book</mark></code> can be <strong>both</strong> a <code><mark class="highlight-brown">story book</mark></code> and <code><mark class="highlight-brown">comic</mark></code>, so the specialization is overlapping.
+                    </p>
+                    <p>
+                    We do not need to specify anything, as overlapping specialization is the default.
+                    </p>
+                </div>
+                <div style="width:50%" class="column">
+                        <img style="width:240px" alt="ISA" src="img/db-er-13.jpeg"/>
+                </div>
+            </div>
+            
+            
         </div>
     </body>
 </html>
