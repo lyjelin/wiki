@@ -75,6 +75,15 @@ code {
     color: inherit;
 }
 
+.highlight-gray {
+    color: rgb(155,154,151);
+}
+.highlight-orange {
+    color: rgb(217,115,13);
+}
+.highlight-yellow {
+    color: rgb(223,171,1);
+}
 .highlight-brown {
     color: rgb(100,71,58);
 }

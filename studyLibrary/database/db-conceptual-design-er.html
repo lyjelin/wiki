@@ -27,14 +27,51 @@
             
             <h4>1. Entity and Entity set</h4>
             <div>
-                <strong>Entity</strong> - an object that exists and is distinguishable from other object; <code><mark class="highlight-blue">customer</mark></code>, <code><mark class="highlight-blue">account</mark></code>, <code><mark class="highlight-blue">department</mark></code>
-                <strong>Entities have Attributes</strong> - people have <code><mark class="highlight-blue">names</mark></code> and <code><mark class="highlight-blue">address</mark></code>
-                <strong>Entity set</strong> - A set of entities of the same type that share the same properties (or attributes); <code><mark class="highlight-blue">set of $\forall$ customers</mark></code> <code><mark class="highlight-blue">all saving accounts</mark></code> <code><mark class="highlight-blue">all departments in the company</mark></code>
+                <ul>
+                    <li><strong>Entity</strong> - an object that exists and is distinguishable from other object; <code><mark class="highlight-blue">customer</mark></code>, <code><mark class="highlight-blue">account</mark></code>, <code><mark class="highlight-blue">department</mark></code></li>
+                    <li>Entities have Attributes - people have <code><mark class="highlight-blue">names</mark></code> and <code><mark class="highlight-blue">address</mark></code></li>
+                    </li><strong>Entity set</strong> - A set of entities of the same type that share the same properties (or attributes); <code><mark class="highlight-blue">set of $\forall$ customers</mark></code> <code><mark class="highlight-blue">all saving accounts</mark></code> <code><mark class="highlight-blue">all departments in the company</mark></code></li>
+                </ul>
+                
+                <div><hr class="solid;highlight-gray"></div>
+                <h5>In ER diagram</h5>
+                <ul>
+                    <li><code><mark class="highlight-brown">Rectangle</mark></code> - entity sets</li>
+                    <li><code><mark class="highlight-brown">Ellipses</mark></code> - attributes </li>
+                    <li><code><mark class="highlight-brown">Line</mark></code> between a rectangle and ellipse - link between an attribute and an entity set </li>
             </div>
             
             <h4>2. Relationship and Relationship set</h4>
+            <div>
+                <ul>
+                    <li>A <code><mark class="highlight-teal">Relationship</mark></code> is an association among entities</li>
+                        <ul>
+                            <li>i.e. the relationship between the customers and the accounts</li>
+                        </ul>
+                    <li>A <code><mark class="highlight-teal">Relationship set</mark></code> is a set of relationships of the same type</li>
+                </ul>
+                <div><hr class="solid;highlight-gray"></div>
+                <h5>In ER diagram</h5>
+                <ul>
+                    <li><code><mark class="highlight-brown">Diamond</mark></code> - a set of relationship</li>
+                </ul>
+            </div>
             
             <h4>3. Constraints</h4>
+            <div>
+                <ul>
+                    <li><strong>Mapping cardinalities<strong></li>
+                    <ul>
+                        <li>Concerns the <mark class="highlight-blue">number of entities</mark> to which another entity can be associated via a relationship set</il>
+                        <li>i.e. For each customer, how many accounts he/she can have? <mark class="highlight-orange">One or more than one</mark>?</li>
+                    </ul>
+                </ul>
+                <div><hr class="solid;highlight-gray"></div>
+                <h5>In ER diagram</h5>
+                <ul>
+                    <li><code><mark class="highlight-brown">Diamond</mark></code> - a set of relationship</li>
+                </ul>
+            </div>
             
             <h4>4. Keys</h4>
             
