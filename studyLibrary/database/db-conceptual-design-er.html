@@ -85,12 +85,12 @@
                 <ul>
                     <li><code><mark class="highlight-brown">Directed line (→)</mark></code>, signifying <strong>one</strong> or An <code><mark class="highlight-brown">undirected line (-)</mark></code>, signifying <strong>many</strong>, between the relationship set and entity set</li>
                     
-                    <img src="img/db-er-1.jpeg" alt="Mapping cardinality" width="50%">
+                    <img src="img/db-er-1.jpeg" alt="Mapping cardinality" style="width:916px">
                         
                     <li><code><mark class="highlight-brown">Double line (=)</mark></code> indicates <strong>Total participation</strong> : Every Entity in the entity set participates at least one relationship In the relationship set</li>
                     <li>Single line(-)</mark></code> indicates <strong>Partial participation</strong> : Some entity may not participate in any relationship in the relationship set</li>
                     
-                    <img src="img/db-er-2.jpeg" alt="Participation constraints" width="50%">
+                    <img src="img/db-er-2.jpeg" alt="Participation constraints" style="width:901px">
                         
                 </ul>
             </div>
@@ -125,6 +125,7 @@
             
             <h3>4. Keys</h3>
             <div>
+                <hr class="dotted">
                 <h4>Super key</h4>
                 
                 <p>Super key of an entity set is a set of <mark class="highlight-orange">one or more attributes</mark> whose values uniquely determine each entity
@@ -194,21 +195,38 @@
                 <div class="indented">
                     <h3 id="8a2a105a-a59a-437b-9561-1b0b2abbf2c9" class="">In ER diagram</h3>
                     <ul>
-                        <li><mark class="highlight-brown"><code>Underline</code></mark> the attribute (<mark class="highlight-brown"><code>Ellipses</code></mark>) <img style="width:432px" src="img/db-er-4jpeg"/></li>
+                        <li><mark class="highlight-brown"><code>Underline</code></mark> the attribute (<mark class="highlight-brown"><code>Ellipses</code></mark>) <img style="width:432px" src="img/db-er-4.jpeg"/></li>
                     </ul>
                 </div>
                 </p>
             </div>
-            
-            
+
             
             <h3>More on ER Diagram</h3>
+            <div>
+                <ul>
+                    <li>Single vs Composite attributes<br><img style="width:432px" src="img/db-er-5.jpeg"/></li>
+                    <li>Single-valued vs Multi-valued attributes <br>
+                        <code><mark class="highlight-brown">Double ellipses</mark></code> is used to represent <strong>multi-valued</strong> attributes<br>
+                        <img src="img/db-er-6.jpeg" alt="Double Ellipses" style="width:528px"><br>
+                            → Here, <code><mark class="highlight-brown">age</mark></code> can be derived from the <code><mark class="highlight-brown">date of birth</mark></code>, we treat <code><mark class="highlight-brown">age</mark></code> as a <strong>derived attribute</strong>
+                    
+                </ul>
+            </div>
+            
+            <div><hr class="solid;highlight-gray"></div>
             
             <h4>1. Different attribute types</h4>
             
+            <div><hr class="solid;highlight-gray"></div>
+            
             <h4>2. Weak entity set</h4>
             
+            <div><hr class="solid;highlight-gray"></div>
+            
             <h4>3. Role</h4>
+            
+            <div><hr class="solid;highlight-gray"></div>
             
             <h4>4. Specialization</h4>
 
