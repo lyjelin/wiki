@@ -113,6 +113,15 @@ code {
 .highlight-blue {
     color: rgb(11,110,153);
 }
+.highlight-purple {
+    color: rgb(105,64,165);
+}
+.highlight-red {
+    color: rgb(224,62,62);
+}
+.highlight-pink {
+    color: rgb(173,26,114);
+}
 
 div {
     margin:20px;
